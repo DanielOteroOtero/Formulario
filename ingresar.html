@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <div class="d-flex text-end">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+                    <li style="margin: 5px" class="nav-item">
+                        <a class="btn btn-outline-light" aria-current="page" href="ingresar.html">Iniciar seccion</a>
+                    </li>
+                    <li style="margin: 5px" class="nav-item">
+                        <a class="btn btn-outline-light" href="formulario.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container table-responsive">
+            <div style="margin: auto;" id="encabezado" class="d-flex justify-content-center mt-5"></div>
+            <div class="card border">
+                <div class="card-header text-center">Iniciar Seccion </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="usuario" class="form-label">Usuario</label>
+                                <input type="text" placeholder="Ingrese su usuario o correo electroncio" class="form-control" id="usuario">
+                                <br>
+                                <label for="contraseña" class="form-label">Contraseña</label>
+                                <input type="text" placeholder="Ingrese su contraseña" class="form-control" id="contraseña">
+                                <br>
+                                <div class="d-grid gap-2">
+                                    <button class=" btn btn-outline-primary mt-2">Ingresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="margin: 10px;" class="row">
+                <div class="card d-flex bg-primary" data-bs-theme="dark">
+                    <div class="card-body text-center">
+                        <p class="card-text">Si quiere aprender mas informacion acerca de la franquicia de pokemon, le invito a pasarse por los siguientes sitios web:</p>
+                        <button style="margin: 5px;" onclick="window.open('https://www.pokemon.com/el');"
+                            type="button" class="btn btn-outline-light">Pagina Oficial de Pokemon</button>
+                        <button style="margin: 5px;" onclick="window.open('https://pokemonshowdown.com/');"
+                            type="button" class="btn btn-outline-light">Pokemon Showdown</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

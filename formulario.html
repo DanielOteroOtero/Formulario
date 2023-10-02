@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <div class="d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+                    <li style="margin: 5px" class="nav-item">
+                        <a class="btn btn-outline-light" aria-current="page" href="ingresar.html">Iniciar sesion</a>
+                    </li>
+                    <li style="margin: 5px" class="nav-item">
+                        <a class="btn btn-outline-light" href="formulario.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container table-responsive">
+            <div style="margin: auto;" id="encabezado" class="d-flex justify-content-center mt-5"></div>
+            <div class="card border">
+                <div class="card-header text-center">Formulario de Registro</div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="cedula" class="form-label">Cedula</label>
+                                <input type="text" placeholder="Ingrese su Cedula" class="form-control" id="cedula">
+                                <br>
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" placeholder="Ingrese su nombre" class="form-control" id="nombre">
+                                <br>
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" placeholder="Ingrese su apellido" class="form-control" id="apellido">
+                                <br>
+                                <label for="edad" class="form-label">Edad</label>
+                                <input type="text" placeholder="Ingrese su edad" class="form-control" id="edad">
+                                <br>
+                                <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                                <input type="text" placeholder="Ingrese su fecha de nacimiento" class="form-control" id="fecha">
+                                <br>
+                                <label for="correo" class="form-label">Correo</label>
+                                <input type="text" placeholder="Ingrese su correo" class="form-control" id="correo">
+                                <br>
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text" placeholder="Ingrese su ciudad" class="form-control" id="ciudad">
+                                <br>
+                                <label for="direccion" class="form-label">Direccion</label>
+                                <input type="text" placeholder="Ingrese su direccion" class="form-control" id="direccion">
+                                <br>
+                                <div class="d-grid gap-2">
+                                    <button onclick="registrar()"class="btn btn-outline-primary mt-2">Registrar</button>
+                                    <button onclick="limpiar()" class="btn btn-outline-success mt-2">Limpiar campos</button>
+                                    <button onclick="listar()" class="btn btn-outline-danger mt-2">Listar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table mt-3">
+                <caption style="color: white;"><strong>Lista de usuarios registrados</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Fecha de Nacimiento</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Direccion</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-body">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div style="margin: 10px;" class="row">
+                <div class="card d-flex bg-primary" data-bs-theme="dark">
+                    <div class="card-body text-center">
+                        <p class="card-text">Si quiere aprender mas informacion acerca de la franquicia de pokemon, le invito a pasarse por los siguientes sitios web:</p>
+                        <button style="margin: 5px;" onclick="window.open('https://www.pokemon.com/el');"
+                            type="button" class="btn btn-outline-light">Pagina Oficial de Pokemon</button>
+                        <button style="margin: 5px;" onclick="window.open('https://pokemonshowdown.com/');"
+                            type="button" class="btn btn-outline-light">Pokemon Showdown</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
